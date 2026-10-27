@@ -11,69 +11,73 @@
 <p>시행일 / Effective / 施行日: 2026-10-27</p>
 <p>고객지원 / Support / お問い合わせ: <a href="mailto:hj@tripled.cc">hj@tripled.cc</a></p>
 <h2 id="ko">한국어</h2>
-<p>LUMA는 청소년과 성인을 위한 퍼즐 게임입니다. 모든 퍼즐은 오프라인으로 플레이할 수 있습니다. 랭킹과 기기 간 진행 저장은 선택 사항이며, 온라인 기능은 만 14세 이상인 이용자가 게임의 안내에 동의한 후 사용할 수 있습니다.</p>
+<p>LUMA는 청소년과 성인을 위한 퍼즐 게임입니다. 로그인 필수 화면이 있는 모바일 버전은 매 실행 시 Google Play 게임즈(Android) 또는 Game Center(iPhone) 인증 후 게임에 들어갑니다. 로그인할 때 인터넷 연결이 필요합니다. 만 14세 이상인 이용자가 로그인 화면의 정보 처리 안내에 동의하고 이용합니다. 이전 버전의 선택형 온라인 기능은 해당 버전의 켜기·끄기 설정을 따릅니다.</p>
 <h3>처리하는 정보와 목적</h3>
 <ul>
-<li>기기에 저장: 진행 상황, 설정, 기록, 직접 만든 정원은 기기의 게임 저장 공간에 보관합니다. 온라인 기능을 사용하지 않으면 게임이 Unity 온라인 서비스와 Google Play 게임즈를 초기화하지 않습니다. 운영체제 백업과 스토어 기능은 기기 설정과 해당 서비스의 정책을 따릅니다.</li>
-<li>게임 계정 ID와 로그인 토큰: Unity Authentication 및 Android의 Google Play 게임즈로 이용자를 확인하고 여러 기기의 진행을 연결합니다. 플랫폼 로그인을 사용할 수 없으면 게스트 계정을 사용할 수 있습니다. 게임은 Google 비밀번호나 이메일 주소를 요청하지 않습니다.</li>
+<li>기기에 저장: 진행 상황, 설정, 기록, 직접 만든 정원은 기기의 게임 저장 공간에 보관합니다. 로그인 버튼을 누르기 전에는 게임이 Unity 인증과 플랫폼 로그인을 요청하지 않습니다. 운영체제 백업과 스토어 기능은 기기 설정과 해당 서비스의 정책을 따릅니다.</li>
+<li>게임 계정 ID와 로그인 토큰: Unity Authentication, Android의 Google Play 게임즈, iPhone의 Game Center로 이용자를 확인하고 여러 기기의 진행을 연결합니다. 로그인 필수 버전에는 게스트 진입이 없습니다. 이전 게스트 계정이 있으면 플랫폼 계정에 연결해 진행을 보존할 수 있습니다. 게임은 Google·Apple 비밀번호나 이메일 주소를 요청하지 않습니다.</li>
 <li>닉네임: 플랫폼 프로필 이름 또는 자동 생성 이름을 사용하며, 랭킹에서 점수와 함께 다른 이용자에게 공개됩니다.</li>
 <li>진행과 순위 기록: 완료한 정원, 별, 완벽 기록, 모드별 기록, 확인한 가이드, 랭킹 도전의 수 기록과 시간을 진행 동기화와 랭킹 제공에 사용합니다. 서버에서 수 기록을 검증해 부정 점수를 방지합니다.</li>
 <li>서비스 이용·진단: Google Play 게임즈 SDK는 게임 프로필, 이용 분석 및 진단 정보를 SDK 안정성과 제품 개선을 위해 처리합니다. Unity 서비스는 식별자, 접속에 필요한 네트워크 정보와 IP 기반 대략적인 지역을 운영·보안·품질 개선에 처리할 수 있습니다. 정밀 위치 권한은 요청하지 않습니다.</li>
 <li>이메일 문의: 직접 제공한 이메일 주소와 문의 내용은 지원·개인정보 요청 처리에 사용합니다. 비밀번호나 인증 코드를 보내지 마세요.</li>
 </ul>
 <h3>제공업체, 보관과 보안</h3>
-<p>Unity Technologies 및 그 서비스 제공업체는 인증, Cloud Save, Cloud Code와 랭킹을 처리합니다. Google은 Play 게임즈 로그인을 제공합니다. 정보는 해당 업체의 해외 서버에서 처리될 수 있습니다. 전송은 HTTPS로 암호화됩니다. 광고, 광고 식별자, 광고 목적 추적 기능은 없고 개인정보를 판매하지 않습니다. 별도 게임 분석 SDK는 없지만 위 온라인 서비스의 진단 처리는 있습니다.</p>
-<p>온라인 기능을 끄면 이후의 게임 진행 업로드와 랭킹 요청을 중지합니다. 처리 중인 요청이나 로그인 SDK의 현재 세션은 종료될 때까지 처리될 수 있습니다. 온라인 기능을 끈 상태로 앱을 다시 실행하면 새 로그인 세션도 시작하지 않습니다.</p>
+<p>Unity Technologies 및 그 서비스 제공업체는 인증, Cloud Save, Cloud Code와 랭킹을 처리합니다. Google은 Play 게임즈, Apple은 Game Center 로그인을 제공합니다. 정보는 해당 업체의 해외 서버에서 처리될 수 있습니다. 전송은 HTTPS로 암호화됩니다. 광고, 광고 식별자, 광고 목적 추적 기능은 없고 개인정보를 판매하지 않습니다. 별도 게임 분석 SDK는 없지만 위 온라인 서비스의 진단 처리는 있습니다.</p>
+<p>로그아웃하면 이후의 게임 진행 업로드와 랭킹 요청을 중지하고 로그인 화면으로 돌아갑니다. 처리 중인 요청이나 로그인 SDK의 현재 세션은 종료될 때까지 처리될 수 있습니다. 다시 플레이하려면 로그인해야 합니다. 이전 버전에서는 온라인 기능 끄기가 이후 요청을 중지합니다.</p>
 <p>게임 계정과 온라인 진행은 계정이 존재하는 동안 보관하고, 계정 삭제 시 게임의 온라인 진행과 Unity 계정을 삭제합니다. 기존 일간·주간 순위 기록은 다음 초기화 때 제거됩니다(최대 7일). 제공업체의 보안 기록·백업은 해당 업체의 보관·삭제 정책을 따릅니다. 문의 정보는 요청 처리에 필요한 동안 보관합니다.</p>
 <h3 id="delete">계정 및 데이터 삭제</h3>
-<p>게임의 <strong>설정 &gt; 온라인 &gt; 온라인 데이터 삭제</strong>에서 Unity 게임 계정과 온라인 진행을 삭제할 수 있습니다. 기기의 진행은 남으며 <strong>설정 &gt; 진행 초기화</strong>에서 별도로 지울 수 있습니다. 삭제한 온라인 데이터는 게임에서 복구할 수 없습니다.</p>
+<p>게임의 <strong>설정 &gt; 온라인 &gt; 온라인 데이터 삭제</strong>에서 Unity 게임 계정과 온라인 진행을 삭제할 수 있습니다. 기기의 진행은 남으며 <strong>설정 &gt; 진행 초기화</strong>에서 별도로 지울 수 있습니다. 삭제한 온라인 데이터는 게임에서 복구할 수 없습니다. 로그인 필수 버전에서는 삭제 후 로그인 화면으로 돌아갑니다. 다시 로그인하면 새 게임 계정이 생성될 수 있으며 남아 있는 기기의 진행이 다시 동기화될 수 있습니다.</p>
 <p>앱 없이도 <a href="mailto:hj@tripled.cc?subject=LUMA%20data%20deletion">hj@tripled.cc</a>로 제목에 “LUMA 데이터 삭제 요청”을 적어 요청할 수 있습니다. 사용 플랫폼과 게임 닉네임(가능하면 # 뒤의 숫자 포함)을 알려 주세요. 공개 이름만으로 타인의 데이터를 삭제하지 않도록 소유 확인에 필요한 최소 정보를 추가 요청할 수 있습니다. 확인 후 삭제 범위와 결과를 안내합니다. 열람·수정 등 개인정보 관련 문의도 같은 주소로 받습니다.</p>
 <p>이 절차는 Google 계정이나 Play 게임즈 프로필 자체를 삭제하지 않습니다. Google이 보관하는 정보는 <a href="https://play.google.com/games/profile">Play 게임즈 프로필</a> 또는 <a href="https://myaccount.google.com/">Google 계정</a>에서 별도로 관리·삭제할 수 있습니다.</p>
-<p>만 14세 미만은 온라인 기능을 켜지 않아야 합니다. 해당 연령의 정보가 잘못 수집되었다고 생각되면 문의해 주세요. 처리 내용이 바뀌면 이 방침과 시행일을 갱신하고 필요한 경우 게임에서 다시 안내합니다.</p>
+<p>이 절차는 Apple 계정이나 Game Center 프로필도 삭제하지 않습니다. Apple이 보관하는 정보는 Apple 계정 및 기기의 Game Center 설정에서 관리합니다.</p>
+<p>만 14세 미만은 로그인하지 않아야 합니다. 해당 연령의 정보가 잘못 수집되었다고 생각되면 문의해 주세요. 처리 내용이 바뀌면 이 방침과 시행일을 갱신하고 필요한 경우 게임에서 다시 안내합니다.</p>
 <h2 id="en">English</h2>
-<p>LUMA is a puzzle game for teenagers and adults. Every puzzle works offline. Rankings and cross-device progress are optional. Online features require confirmation that the player is at least 14 and agrees to the in-game notice.</p>
+<p>LUMA is a puzzle game for teenagers and adults. Mobile versions with a required login screen authenticate through Google Play Games (Android) or Game Center (iPhone) on each launch before entry. Internet is required at sign-in. Players confirm they are at least 14 and agree to the data-use notice on that screen. Older versions with optional online features retain their on/off setting.</p>
 <h3>Data and purposes</h3>
 <ul>
-<li>Local progress, settings, records and personal garden designs remain in the game&#x27;s device storage. Without online consent, the game does not initialize Unity online services or Google Play Games. OS backups and store services follow your device settings and their providers&#x27; policies.</li>
-<li>Game account identifiers and login tokens authenticate you through Unity Authentication and, on Android, Google Play Games. A guest account can be used when platform sign-in is unavailable. The game does not request your Google password or email address.</li>
+<li>Local progress, settings, records and personal garden designs remain in the game&#x27;s device storage. The game does not request Unity authentication or platform login before you press the sign-in button. OS backups and store services follow your device settings and their providers&#x27; policies.</li>
+<li>Game account identifiers and login tokens authenticate you through Unity Authentication, Google Play Games on Android, and Game Center on iPhone. Required-login versions do not allow guest entry. An existing guest account may be linked to preserve progress. The game does not request your Google or Apple password or email address.</li>
 <li>Your platform nickname or a generated name is displayed publicly with your ranking score.</li>
 <li>Progress, completed gardens, stars, perfect records, mode records, viewed guides, ranked moves and times support progress synchronization, rankings and server verification of scores.</li>
 <li>Google Play Games processes game profile information, usage analytics and diagnostics for SDK stability and product improvements. Unity services may process identifiers, network information and IP-based approximate region for operation, security and quality. The game does not request precise location permission.</li>
 <li>If you email support, your address and the information you send are used to handle your request. Do not send passwords or authentication codes.</li>
 </ul>
 <h3>Providers, retention and security</h3>
-<p>Unity Technologies and its vendors provide authentication, Cloud Save, Cloud Code and leaderboards. Google provides Play Games sign-in. Processing may take place on servers outside your country. Data is encrypted in transit using HTTPS. The game has no ads, advertising identifier, advertising tracking or sale of personal data. There is no separate gameplay analytics SDK; the service diagnostics above still apply.</p>
-<p>Turning online features off stops subsequent game progress uploads and ranking requests. Pending requests or an initialized login SDK session may finish; restarting with online features off prevents a new session.</p>
+<p>Unity Technologies and its vendors provide authentication, Cloud Save, Cloud Code and leaderboards. Google provides Play Games sign-in and Apple provides Game Center sign-in. Processing may take place on servers outside your country. Data is encrypted in transit using HTTPS. The game has no ads, advertising identifier, advertising tracking or sale of personal data. There is no separate gameplay analytics SDK; the service diagnostics above still apply.</p>
+<p>Signing out stops subsequent progress uploads and ranking requests and returns to the login screen. Pending requests or an initialized login SDK session may finish. Sign in again to resume play. In older versions, switching online features off stops subsequent requests.</p>
 <p>The game account and online progress are retained while the account exists. Account deletion removes the Unity game account and its online progress. Existing daily and weekly ranking entries expire at the next reset, within seven days. Provider security records and backups follow their own retention policies. Support correspondence is kept as needed to resolve the request.</p>
 <h3>Delete your account and data</h3>
-<p>Use <strong>Settings &gt; Online &gt; Delete online data</strong>. Local progress remains until you separately use <strong>Settings &gt; Reset progress</strong>. Deleted online data cannot be restored through the game.</p>
+<p>Use <strong>Settings &gt; Online &gt; Delete online data</strong>. Local progress remains until you separately use <strong>Settings &gt; Reset progress</strong>. Deleted online data cannot be restored through the game. Required-login versions return to the login screen after deletion. Signing in again may create a new game account and sync the local progress that remains.</p>
 <p>Without the app, email <a href="mailto:hj@tripled.cc?subject=LUMA%20data%20deletion">hj@tripled.cc</a> with the subject “LUMA data deletion”. Include your platform and game nickname, including the # suffix if available. We may request the minimum additional information needed to verify ownership: a public nickname alone is not sufficient. We will explain the deletion scope and outcome after verification. The same address accepts access, correction and other privacy requests.</p>
 <p>This does not delete your Google account or Play Games profile. Manage data held by Google separately in your <a href="https://play.google.com/games/profile">Play Games profile</a> or <a href="https://myaccount.google.com/">Google Account</a>.</p>
-<p>Players under 14 should leave online features off. Contact us if you believe their information was collected in error. When processing changes, we update this policy and its effective date, and renew the in-game notice where needed.</p>
+<p>This also does not delete your Apple account or Game Center profile. Manage Apple&#x27;s data in your Apple account and device Game Center settings.</p>
+<p>Players under 14 should not sign in. Contact us if you believe their information was collected in error. When processing changes, we update this policy and its effective date, and renew the in-game notice where needed.</p>
 <h2 id="ja">日本語</h2>
-<p>LUMAは青少年と成人を対象とするパズルゲームです。すべてのパズルはオフラインで遊べます。ランキングと端末間の進行保存は任意です。オンライン機能は14歳以上であることを確認し、ゲーム内の案内に同意した方が利用できます。</p>
+<p>LUMAは青少年と成人を対象とするパズルゲームです。ログイン必須画面のあるモバイル版では、起動ごとにGoogle Playゲームズ（Android）またはGame Center（iPhone）で認証してからゲームに入ります。サインインにはインターネット接続が必要です。14歳以上であることを確認し、ログイン画面の情報利用案内に同意してご利用ください。旧版の任意オンライン機能には、その版のオン・オフ設定が適用されます。</p>
 <h3>情報と目的</h3>
 <ul>
-<li>進行、設定、記録、自作の庭は端末内に保存します。オンラインに同意しない場合、ゲームはUnityのオンラインサービスとGoogle Playゲームズを初期化しません。OSのバックアップとストア機能は端末設定と各社の方針に従います。</li>
-<li>アカウントIDとログイントークンをUnity AuthenticationおよびAndroidのGoogle Playゲームズで認証と端末間の連携に使います。利用できない場合はゲストアカウントを利用できます。ゲームはGoogleのパスワードやメールアドレスを要求しません。</li>
+<li>進行、設定、記録、自作の庭は端末内に保存します。サインインボタンを押す前に、ゲームがUnity認証やプラットフォームのログインを要求することはありません。OSのバックアップとストア機能は端末設定と各社の方針に従います。</li>
+<li>アカウントIDとログイントークンをUnity Authentication、AndroidのGoogle Playゲームズ、iPhoneのGame Centerで認証と端末間の連携に使います。ログイン必須版ではゲストで入れません。既存のゲストを連携して進行を保持できる場合があります。ゲームはGoogleやAppleのパスワード、メールアドレスを要求しません。</li>
 <li>プロフィールのニックネームまたは自動生成名を、ランキングのスコアとともに公開します。</li>
 <li>進行、クリアした庭、星、パーフェクト、モード別記録、閲覧したガイド、順位対象の手順と時間を、進行同期、ランキング、不正スコア防止に使います。</li>
 <li>Google Playゲームズはゲームプロフィール、利用分析、診断情報をSDKの安定性と製品改善のため処理します。Unityのサービスは識別子、ネットワーク情報、IPに基づくおおよその地域を運用・安全性・品質のため処理する場合があります。正確な位置情報の権限は要求しません。</li>
 <li>メールのアドレスとお問い合わせ内容を対応に使用します。パスワードや認証コードを送らないでください。</li>
 </ul>
 <h3>提供者、保存と安全性</h3>
-<p>Unity Technologiesとその委託先が認証、Cloud Save、Cloud Code、ランキングを提供し、GoogleがPlayゲームズのログインを提供します。国外のサーバーで処理される場合があります。通信はHTTPSで暗号化します。広告、広告識別子、広告目的の追跡、個人情報の販売はありません。独立したゲーム分析SDKはありませんが、上記サービスの診断処理はあります。</p>
-<p>オンラインをオフにすると、その後の進行アップロードとランキング要求を停止します。処理中の要求や開始済みのログインSDKセッションは完了まで動作する場合があります。オフのまま再起動すると新しいセッションも開始しません。</p>
+<p>Unity Technologiesとその委託先が認証、Cloud Save、Cloud Code、ランキングを提供し、GoogleがPlayゲームズ、AppleがGame Centerのログインを提供します。国外のサーバーで処理される場合があります。通信はHTTPSで暗号化します。広告、広告識別子、広告目的の追跡、個人情報の販売はありません。独立したゲーム分析SDKはありませんが、上記サービスの診断処理はあります。</p>
+<p>サインアウトすると、その後の進行アップロードとランキング要求を停止し、ログイン画面に戻ります。処理中の要求や開始済みのSDKセッションは完了まで動作する場合があります。再開にはサインインが必要です。旧版ではオンラインをオフにすると以後の要求を停止します。</p>
 <p>アカウントとオンライン進行はアカウントがある間保存し、削除時にUnityゲームアカウントとオンライン進行を削除します。既存の順位記録は次の日次・週次リセット時、最長7日で消去されます。提供者の安全性に関する記録やバックアップは各社の方針に従います。お問い合わせ情報は対応に必要な間保存します。</p>
 <h3>アカウントとデータの削除</h3>
-<p><strong>設定＞オンライン＞オンラインデータを削除</strong>を選択してください。端末内の進行は残り、<strong>設定＞進行をリセット</strong>で別途削除できます。削除したオンラインデータをゲームから復元することはできません。</p>
+<p><strong>設定＞オンライン＞オンラインデータを削除</strong>を選択してください。端末内の進行は残り、<strong>設定＞進行をリセット</strong>で別途削除できます。削除したオンラインデータをゲームから復元することはできません。ログイン必須版は削除後にログイン画面に戻ります。再度サインインすると新しいゲームアカウントが作成され、残った端末内の進行が再同期される場合があります。</p>
 <p>アプリがなくても、件名「LUMAデータ削除依頼」で<a href="mailto:hj@tripled.cc?subject=LUMA%20data%20deletion">hj@tripled.cc</a>に依頼できます。使用プラットフォームとニックネーム（可能であれば#以降も）を記載してください。公開名だけで他人のデータを削除しないよう、所有確認に必要な最小限の追加情報をお願いする場合があります。確認後に削除範囲と結果をご案内します。開示・訂正なども同じ窓口で受け付けます。</p>
 <p>これはGoogleアカウントやPlayゲームズプロフィール自体の削除ではありません。Googleが保持する情報は<a href="https://play.google.com/games/profile">Playゲームズプロフィール</a>または<a href="https://myaccount.google.com/">Googleアカウント</a>で別途管理・削除できます。</p>
-<p>14歳未満の方はオンラインをオフにしてください。誤って情報を取得したと思われる場合はご連絡ください。処理内容の変更時は本方針と施行日を更新し、必要に応じてゲーム内でも再度案内します。</p>
+<p>AppleアカウントやGame Centerプロフィール自体も削除されません。Appleの情報はAppleアカウントと端末のGame Center設定で管理してください。</p>
+<p>14歳未満の方はサインインしないでください。誤って情報を取得したと思われる場合はご連絡ください。処理内容の変更時は本方針と施行日を更新し、必要に応じてゲーム内でも再度案内します。</p>
 <h2>서비스 정책 / Provider policies / 各社の方針</h2>
 <ul>
 <li><a href="https://unity.com/legal/privacy-policy">Unity Privacy Policy</a></li>
 <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+<li><a href="https://www.apple.com/legal/privacy/data/en/game-center/">Apple Game Center &amp; Privacy</a></li>
 <li><a href="https://developer.android.com/games/pgs/data-collection">Google Play Games data disclosures</a></li>
 <li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>: this support website is hosted on GitHub Pages; its web access processing follows this statement.</li>
 </ul></main><footer>© 2026 Triple D Company · LUMA</footer></body></html>
